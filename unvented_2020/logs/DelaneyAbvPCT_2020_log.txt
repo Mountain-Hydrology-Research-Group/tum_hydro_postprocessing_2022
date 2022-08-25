@@ -1,0 +1,29 @@
+POST PROCESSING LOG FILE FOR: DelaneyAbvPCT
+DATA COLLECTION YEAR: 2020
+LOG CREATED: 05/12/2022
+
+
+
+RAW SOLINST META DATA
+
+Serial_number:
+2065011
+Project ID:
+Location:
+Delaney above PCT
+LEVEL
+UNIT: cm
+Offset: 0.000000 cm
+TEMPERATURE
+UNIT: °C
+Date,Time,ms,LEVEL,TEMPERATURE
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_DelaneyAbvPCT_2020.csv
+UTC Inspection: Temp peaks around 23:00 (23:00 - 7 = 4:00PM). Conclude data is in UTC
+Baro Source: ../data/ncar_reanalysis/hypso_pres.sfc.2019-2020.nc
+Ice Jams: None
+Sensor Shifts: None
+

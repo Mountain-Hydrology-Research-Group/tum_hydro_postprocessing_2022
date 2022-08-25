@@ -1,0 +1,23 @@
+Site Name,Field visit date,Field task,Q Method,Stage (ft),Measured Q (cfs),Gage maintenance notes
+Tuolumne@120,6/9/2020,"Discharge, data download",ADCP,3.63,127.109,
+Tuolumne@120,8/5/2020,Discharge,ADCP,2.72,18.553,Need to replace DL USB on bridge
+Tuolumne@120,8/26/2020,Swap data logger,,6.68,,
+LyellAbvTB,6/10/2020,Discharge,ADCP,9.96,107.237,
+LyellAbvTB,7/22/2020,Discharge,ADCP,9.34,22.499,
+LyellAbvTB,8/6/2020,Discharge,ADCP,9.19,13.056,
+LyellAbvTB,8/13/2020,Swap data logger and survey,--,9.11,,
+DanaFk@BugCamp,6/9/2020,Discharge,ADCP,1.29,47.102,
+DanaFk@BugCamp,7/23/2020,Discharge,ADCP,0.93,8.518,
+DanaFk@BugCamp,8/3/2020,Discharge,ADV,0.88,6.422,
+DanaFk@BugCamp,8/12/2020,Swap data logger and survey,,1.86,,
+DelaneyAbvPCT,7/15/2020,Discharge,ADV,6.7,0.480,
+DelaneyAbvPCT,8/4/2020,Discharge,ADV,6.31,0.007,
+DelaneyAbvPCT,8/13/2020,Swap data logger and survey,,6.05,,
+DelaneyAbvPCT,8/26/2020,,Volumetric,6.13,0.0009,
+BuddCrk,6/18/2020,Discharge,ADV,7.74,4.680,
+BuddCrk,8/4/2020,Discharge,ADV,7.47,0.292,
+BuddCrk,8/13/2020,Swap data logger and survey,,7.43,,
+LyellBlwMaclure,6/25/2020,Discharge and data download,Wet salt slug,7.62,39.524,Check field notes
+LyellBlwMaclure,6/25/2020,Discharge and data download,Wet salt slug,7.61,41.886,
+LyellBlwMaclure,8/19/2020,Discharge and data download,Wet salt slug,7.1,,
+LyellBlwMaclure,8/19/2020,Discharge and data download,Wet salt slug,7.09,,

@@ -1,0 +1,44 @@
+POST PROCESSING LOG FILE FOR: Tuolumne@120
+DATA COLLECTION YEAR: 2021
+LOG CREATED: 05/14/2022
+
+
+
+RAW SOLINST META DATA
+
+
+Serial_number:
+2052258
+Project ID:
+Location:
+Tuolumne@120
+LEVEL
+UNIT: cm
+Offset: 0.000000 cm
+TEMPERATURE
+UNIT: °C
+Date,Time,ms,LEVEL,TEMPERATURE
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_Tuolumne@120_2021.csv
+UTC Inspection: Temp peaks around 2:00 (2:00 - 7 = 19:00). Conclude data is in UTC
+Baro Source: ../data/normalized_raw/baro_ConnessCrk_2021.csv
+Ice Jams:
+Ice Jam 1
+start: 2020-11-20
+end: 2020-12-13
+
+
+Ice Jam 2
+start: 2020-12-13
+end: 2021-1-12 6:00
+
+
+Ice Jam 3
+start: 2021-1-12 6:00
+end: 2021-2-20
+
+Sensor Shifts: None
+

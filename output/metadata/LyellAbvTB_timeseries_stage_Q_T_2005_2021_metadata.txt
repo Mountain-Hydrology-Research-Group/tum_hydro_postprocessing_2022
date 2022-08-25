@@ -1,0 +1,120 @@
+** Metadata for LyellAbvTB_timeseries_stage_Q_T_2005_2021.csv
+** Contact: Jessica D. Lundquist (jdlund@uw.edu), University of Washington
+** Updated: August 25, 2022
+** Title: Lyell Fork of the Tuolumne River near the twin bridges on the Pacific Crest Trail near Tuolumne Meadows stage, temperature, and discharge
+** PI:  Jessica D. Lundquist (jdlund@uw.edu), University of Washington
+** Funding:  National Science Foundation, CBET-0729830, and NASA Grant-NNX15AB29G
+
+
+** Summary:
+Half-hourly recordings of raw pressure (in cm of water), water pressure (in cm of water, with 
+atmospheric pressure removed), estimated discharge (in cubic-feet-per-second), and water
+temperature (in degrees Celcius), from instruments located on the Lyell Fork of the Tuolumne River both upstream
+and downstream of the twin bridges on the Pacific Crest Trail near Tuolumne Meadows,
+Yosemite National Park, for water years
+2005 to 2021. These measurements were taken by Solinst Leveloggers of various models.
+.
+
+
+** Location:
+Tuolumne River Watershed, Yosemite National Park
+Approximate Coordinates: 37.86948 N, 119.33110 W (datum: NAD 83)
+Near Lee Vining, California, USA (Tuolumne County)
+Elevation:  m
+See the Data Citation for more imformation about each site.
+
+
+** Site History: Important Changes in Site Setup and Missing Data 
+- Previously, both a downstream and upstream site were maintained. This dataset only includes
+  data from the upstream site; however, further data for the downstream site is available (if desired)
+- Previously, no quality staff plate or datum existed for this location, so the barocorrected instrument-recorded
+  stage was considered the stage of record and manual measurements of stage were not used as part of gaugings
+  to determine rating curves. 
+- During summer 2015, a benchmark bolt was installed. Following the installation of the new benchmark, the top
+  of the stilling tube was used for measuring stage.
+- Unvented data for 2019 and 2020 was barometrically corrected using NCAR Reanalysis surface pressure
+  since no adequate Barologger record was present.
+- The channel cross-section is not believed to have changed between the start of the record and 2018. 
+  In the subsequent years channel-bank erosion has been observed.
+
+
+
+** Variables and Units:
+Note: the raw_pressure can either reflect vented or unvented levelogger data (depending on data 
+availability and quality). When available, vented data is preferred to unvented data. To determine
+which sensor was used at a particular time step, compare the 'raw_pressure(cm)' column to the
+'barocorrected_pressure(cm)' column. If the two values are the same, the data is from a vented Levelogger.
+If they differ, the data is from an unvented Levelogger.
+
+date_time(UTC:PDT+7)       - time stamp in UTC, in format "yyyy/mm/dd HH:MM:SS", midnight = 00:00:00
+raw_pressure(cm)           - raw data from the logger (either vented or unvented) (cm of water)
+barocorrected_pressure(cm) - raw Levelogger data minus atmospheric pressure, same as raw when vented
+                             logger is selected for period (cm of water)
+adjusted_stage(cm)         - vented or baroccorrected pressure plus offset used to align with manual 
+                             measurements/previous record (cm of water)
+estimated_discharge(cms)   - calculated using rating curve defined below (cubic-meters-per-second, cms)
+water_temperature(deg_C)   - raw stream temperature recorded by the Levelogger (degrees Celsius)
+discharge_flag             - QC flag defined below
+NaN = no data
+
+
+** Discharge Flags:
+0 = No detected anomoly, ice jam, or malfunction
+1 = Anomalous single timestep readings ("blips"). Corrected to average of previous and subsequent recording
+2 = High stage recordings created by ice blocking river flow.
+3 = Sensor malfunction
+
+
+** Instrument Models:
+The following instruments are used for vented pressure collection:
+
+
+Unvented pressure data is collected using Solinst Leveloggers of several models: Levelogger Edge, Levelogger Gold
+and Levelogger Junior. See the official documentation for more details:
+https://www.solinst.com/products/dataloggers-and-telemetry/3001-levelogger-series/operating-instructions/previous-instruction-versions/3001-user-guide-v4-4-0.pdf
+
+
+** Rating Curves:
+The rating curve equation used to estimate discharge is
+for H < 0.545617m, Q = 13.0679*(H-0.189547)^1.53746
+for 0.545617m < H < 0.786625m, Q = 32.3266*(H-0.3171)^1.68957
+for 0.786625m < H, Q = 34.0175*(H-0.3297)^1.69602
+
+Note: The greatest uncertainties occur at very high flows (due to the small number of manual measurements in that
+range) and at very low flows (due to uncertainty in the gauge datum and the exact water depth above the sensor
+when discharge stops).
+
+
+** Data Postprocessing and Quality Control Summary:
+This file includes raw, corrected, and estimated data. The 'raw_pressure(cm)' data is a temporally-continuous 
+record made up of a number of different loggers deployed through time (generally changed once per summer). 
+The corrected data includes both the 'barocorrected_pressure(cm)' and 'adjusted_stage(cm)' time series, 
+which apply an atmospheric pressure correction and datum correction, respectively. The 
+'estimated_discharge(cms)' time series is an estimate of discharge computed using the 'adjusted_stage(cm)' time series
+and site rating curve (which is built using manual measurements collected over several summers). 
+The postprocessing includes all the of steps needed to translate the 'raw_pressure(cm)' time series into 
+the 'estimated_discharge(cms)' time series. There is a summary of the steps below. For a comprehensive, 
+thorough view of the post processing, visit the following url, where all steps are documented in Jupyter notebooks:
+
+
+For each site, the following operations were completed:
+1. Both vented and unvented Levelogger time series were inspected, trimmed (to the segment when the sensor
+   was actively deployed), converted to appropriate units, and examined for sensor malfunctions, ice jams, 
+   and sensor shifts.
+2. A barometric pressure correction was applied to the unvented Levelogger time series using colocated Barologger 
+   time series when available and NCAR Reanalysis surface pressure data otherwise. When NCAR Reanalysis data was 
+   used, a hypsometric elevation correction was applied before performing the barometric correction. 
+3. An offset was applied to both vented and barometrically corrected unvented Levelogger time series to convert 
+   to the stage reference datum. Offsets are typically estimated by comparing the 'barocorrected_pressure(cm)' to 
+   previous corrected time series and/or available manual stage measurements. 
+4. For each water year, either the vented or corrected unvented Levelogger time series was selected 
+   (based on data availability and quality) as the stage measurement ('adjusted_stage(cm)')
+5. Stage time series from consecutive years were concatenated
+6. Discharge was estimated using the stage time series and documented rating curve.
+
+
+** Data Citation:
+Lundquist, J. D., J. W. Roche, H. Forrester, C. Moore, E. Keenan, G. Perry, N. Cristea, B. Henn,
+K. Lapo, B. McGurk, D. R. Cayan, and M. D. Dettinger (2016), Yosemite hydroclimate network: Distributed
+stream and atmospheric data for the Tuolumne River watershed and surroundings. Water Resour. Res.,
+doi:10.1002/2016WR019261

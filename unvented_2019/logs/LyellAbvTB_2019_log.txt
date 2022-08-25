@@ -1,0 +1,52 @@
+POST PROCESSING LOG FILE FOR: LyellAbvTB
+DATA COLLECTION YEAR: 2019
+LOG CREATED: 05/12/2022
+
+
+
+RAW SOLINST META DATA
+
+Serial_number:   
+2004212   
+Project ID:   
+L2004212   
+Location:   
+Lyell_Fk_abv_Twin_Br_Stilling_Tu
+LEVEL   
+UNIT: cm   
+Offset: 0.000000 cm   
+TEMPERATURE   
+UNIT: Â°C   
+Date,Time,ms,LEVEL (cm),TEMPERATURE 
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_LyellAbvTB_2019.csv
+UTC Inspection: Temp peaks around 1:00 (6:00PM PDT). Conclude data is in UTC
+Baro Source: ../data/ncar_reanalysis/hypso_pres.sfc.2018-2019.nc
+Ice Jams:
+Ice Jam 1
+start: 2019-02-01
+end: 2019-02-28
+
+Sensor Shifts: None
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_LyellAbvTB_2019.csv
+UTC Inspection: Temp peaks around 1:00 (6:00PM PDT). Conclude data is in UTC
+Baro Source: ../data/ncar_reanalysis/hypso_pres.sfc.2018-2019.nc
+Ice Jams:
+Ice Jam 1
+start: 2019-02-01
+end: 2019-02-28
+
+
+Ice Jam 2
+start: 2019-04-08
+end: 2019-05-01
+
+Sensor Shifts: None
+

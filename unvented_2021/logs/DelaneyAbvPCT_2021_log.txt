@@ -1,0 +1,30 @@
+POST PROCESSING LOG FILE FOR: DelaneyAbvPCT
+DATA COLLECTION YEAR: 2021
+LOG CREATED: 05/14/2022
+
+
+
+RAW SOLINST META DATA
+
+
+Serial_number:
+2052257
+Project ID:
+Location:
+Delaney Creek
+LEVEL
+UNIT: cm
+Offset: 0.000000 cm
+TEMPERATURE
+UNIT: °C
+Date,Time,ms,LEVEL,TEMPERATURE
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_DelaneyAbvPCT_2021.csv
+UTC Inspection: Temp peaks around 2:00 (2:00 - 7 = 19:00). Conclude data is in UTC
+Baro Source: ../data/normalized_raw/baro_ConnessCrk_2021.csv
+Ice Jams: None
+Sensor Shifts: None
+

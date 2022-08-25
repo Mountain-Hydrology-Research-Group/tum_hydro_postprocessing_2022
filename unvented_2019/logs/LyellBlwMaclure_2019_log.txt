@@ -1,0 +1,30 @@
+POST PROCESSING LOG FILE FOR: LyellBlwMaclure
+DATA COLLECTION YEAR: 2019
+LOG CREATED: 05/12/2022
+
+
+
+RAW SOLINST META DATA
+
+Serial_number:
+2004273
+Project ID:
+L2004273
+Location:
+Budd_Ck_abv_culvert
+LEVEL
+UNIT: cm
+Offset: 0.000000 cm
+TEMPERATURE
+UNIT: °C
+Date,Time,ms,LEVEL,TEMPERATURE
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_LyellBlwMaclure_2019.csv
+UTC Inspection: Temp peaks around 23:00 (4:00PM local time). Conclude data is in UTC
+Baro Source: ../data/ncar_reanalysis/hypso_pres.sfc.2018-2019.nc
+Ice Jams: None
+Sensor Shifts: None
+

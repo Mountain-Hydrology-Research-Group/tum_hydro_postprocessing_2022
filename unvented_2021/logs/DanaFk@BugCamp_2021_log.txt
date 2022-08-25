@@ -1,0 +1,60 @@
+POST PROCESSING LOG FILE FOR: DanaFk@BugCamp
+DATA COLLECTION YEAR: 2021
+LOG CREATED: 05/14/2022
+
+
+
+RAW SOLINST META DATA
+
+
+Serial_number:
+2065021
+Project ID:
+Location:
+Dana_Fork_at_Bug_Camp
+LEVEL
+UNIT: cm
+Offset: 0.000000 cm
+TEMPERATURE
+UNIT: °C
+Date,Time,ms,LEVEL,TEMPERATURE
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_DanaFk@BugCamp_2021.csv
+UTC Inspection: Temp peaks around 2:00 (2:00 - 7 = 19:00). Conclude data is in UTC
+Baro Source: ../data/normalized_raw/baro_ConnessCrk_2021.csv
+Ice Jams:
+Ice Jam 1
+start: 2020-11-23 0:00
+end: 2021-3-15
+
+Sensor Shifts:
+Shift 1
+start: 2021-7-07 20:00
+end: 2021-7-07 22:30
+
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_DanaFk@BugCamp_2021.csv
+UTC Inspection: Temp peaks around 2:00 (2:00 - 7 = 19:00). Conclude data is in UTC
+Baro Source: ../data/normalized_raw/baro_ConnessCrk_2021.csv
+Ice Jams:
+Ice Jam 1
+start: 2020-11-23 0:00
+end: 2021-3-15
+
+
+Ice Jam 2
+start: 2021-4-01 12:00
+end: 2021-4-08 0:00
+
+Sensor Shifts:
+Shift 1
+start: 2021-7-07 20:00
+end: 2021-7-07 22:30
+
+

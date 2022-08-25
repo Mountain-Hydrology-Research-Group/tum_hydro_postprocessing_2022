@@ -1,0 +1,33 @@
+POST PROCESSING LOG FILE FOR: BuddCreek
+DATA COLLECTION YEAR: 2020
+LOG CREATED: 05/12/2022
+
+
+
+RAW SOLINST META DATA
+
+Serial_number:
+2065035
+Project ID:
+Location:
+BuddCreek_btwCulvertandSideChann
+LEVEL
+UNIT: cm
+Offset: 0.000000 cm
+TEMPERATURE
+UNIT: °C
+Date,Time,ms,LEVEL,TEMPERATURE
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_BuddCreek_2020.csv
+UTC Inspection: Temp peaks around 23:00 (23:00 - 7 = 4:00). Conclude data is in UTC
+Baro Source: ../data/ncar_reanalysis/hypso_pres.sfc.2019-2020.nc
+Ice Jams:
+Ice Jam 1
+start: 2019-12-11 19:00
+end: 2019-12-15 8:00
+
+Sensor Shifts: None
+

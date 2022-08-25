@@ -1,0 +1,29 @@
+POST PROCESSING LOG FILE FOR: Tuolumne@120
+DATA COLLECTION YEAR: 2020
+LOG CREATED: 05/12/2022
+
+
+
+RAW SOLINST META DATA
+
+Serial_number:
+2004212
+Project ID:
+Location:
+TUTR120
+LEVEL
+UNIT: cm
+Offset: 0.000000 cm
+TEMPERATURE
+UNIT: °C
+Date,Time,ms,LEVEL,TEMPERATURE
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_Tuolumne@120_2020.csv
+UTC Inspection: 
+Baro Source: ../data/ncar_reanalysis/hypso_pres.sfc.2019-2020.nc
+Ice Jams: None
+Sensor Shifts: None
+

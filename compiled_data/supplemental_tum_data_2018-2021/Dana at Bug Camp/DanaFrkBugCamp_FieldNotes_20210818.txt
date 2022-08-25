@@ -1,0 +1,12 @@
+Dana Fork Bug Camp
+JSD
+18 August 2021
+
+Download and discharge msmst
+
+Stage 13:30 0.83 ft staff
+Stage 14:15 0.83 ft staff
+
+Gage reads 0.85 ft - OK, no offset applied
+
+Discharge 3.99 cfs

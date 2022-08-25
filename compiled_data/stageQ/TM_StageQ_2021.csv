@@ -1,0 +1,34 @@
+Site Name,Field visit date,Field task,Q Method,Stage (ft),Measured Q (cfs)
+Tuolumne@120,11/10/2020,Download?,,,
+Tuolumne@120,5/12/2021,Discharge,ADCP,4.72,373
+Tuolumne@120,6/8/2021,Discharge,ADCP,3.85,
+Tuolumne@120,7/15/2021,Discharge,ADV,2.94,
+Tuolumne@120,8/12/2021,"Discharge, logger swap",ADV,,
+Tuolumne@120,8/26/2021,Discharge,ADV,2.54,6.78
+LyellAbvTB,6/15/2021,Discharge,ADCP,9.39,72.11
+LyellAbvTB,7/14/2021,Discharge,ADV,,
+LyellAbvTB,7/26/2021,"Discharge, logger swap, survey",ADV,9.3,
+LyellAbvTB,8/24/2021,Discharge,ADV,9,6.39
+DanaFk@BugCamp,6/7/2021,Discharge,ADCP,1.4,83.439
+DanaFk@BugCamp,7/7/2021,"Discharge, data download",ADV,1,
+DanaFk@BugCamp,7/14/2021,"Discharge, data download",ADV,,
+DanaFk@BugCamp,7/21/2021,"Discharge, data download",ADV,0.96,9.95
+DanaFk@BugCamp,7/28/2021,"Discharge, data download, logger swap",ADV,1.03,
+DanaFk@BugCamp,8/18/2021,"Discharge, data download",ADV,0.83,3.99
+DanaFk@BugCamp,8/25/2021,"Discharge, data download",ADV,0.79,2.64
+DanaFk@BugCamp,9/1/2021,"Discharge, data download",ADV,0.74,
+DanaFk@BugCamp,9/8/2021,Stage reading only,,0.71,
+DanaFk@BugCamp,9/15/2021,"Discharge, data download",ADV,0.71,1.11
+DelaneyAbvPCT,6/15/2021,Discharge,ADV,7.11,4.220
+DelaneyAbvPCT,7/19/2021,Discharge?,,,
+DelaneyAbvPCT,7/26/2021,"Discharge, logger swap",ADV,7.79,
+DelaneyAbvPCT,8/26/2021,Discharge,Volumetric,5.84,0.002751830087
+BuddCrk,5/12/2021,Discharge,ADV,8.06,19.300
+BuddCrk,6/16/2021,Discharge,ADV,7.63,2.57
+BuddCrk,7/15/2021,Discharge,ADV,7.47,
+BuddCrk,7/27/2021,"Discharge, logger swap",ADV,7.5,
+BuddCrk,8/26/2021,Discharge,Zero flow,,0
+LyellBlwMaclure,6/3/2021,"Discharge, data download",Wet salt slug,7.74,73.02
+LyellBlwMaclure,6/3/2021,"Discharge, data download",Wet salt slug,7.75,94.22
+LyellBlwMaclure,8/11/2021,"Discharge, data download",Wet salt slug,6.92,16.25
+LyellBlwMaclure,8/11/2021,"Discharge, data download",Wet salt slug,6.94,16.41

@@ -1,0 +1,39 @@
+POST PROCESSING LOG FILE FOR: LyellBlwMaclure
+DATA COLLECTION YEAR: 2021
+LOG CREATED: 05/14/2022
+
+
+
+RAW SOLINST META DATA
+
+
+Serial_number:
+2065035
+Project ID:
+Location:
+Lyell Below Maclure
+LEVEL
+UNIT: cm
+Offset: 0.000000 cm
+TEMPERATURE
+UNIT: °C
+Date,Time,ms,LEVEL,TEMPERATURE
+
+
+SOLINST LEVEL POST PROCESSING AND QC
+
+Level Source: ../data/normalized_raw/lvl_LyellBlwMaclure_2021.csv
+UTC Inspection: Temp peaks around 23:00 (23:00 - 7 = 4:00). Conclude data is in UTC
+Baro Source: ../data/normalized_raw/baro_ConnessCrk_2021.csv
+Ice Jams:
+Ice Jam 1
+start: 2020-11-26 18:00
+end: 2020-12-14 0:00
+
+
+Ice Jam 2
+start: 2021-1-25
+end: 2021-1-29 6:00
+
+Sensor Shifts: None
+
