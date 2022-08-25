@@ -95,7 +95,7 @@ and site rating curve (which is built using manual measurements collected over s
 The postprocessing includes all the of steps needed to translate the 'raw_pressure(cm)' time series into 
 the 'estimated_discharge(cms)' time series. There is a summary of the steps below. For a comprehensive, 
 thorough view of the post processing, visit the following url, where all steps are documented in Jupyter notebooks:
-
+https://github.com/Mountain-Hydrology-Research-Group/tum_hydro_postprocessing_2022
 
 For each site, the following operations were completed:
 1. Both vented and unvented Levelogger time series were inspected, trimmed (to the segment when the sensor
